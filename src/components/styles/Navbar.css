@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-left: 3rem;
+    text-align: right;
+}
+
+.navbar button {
+    height: 3rem;
+    background-color: #1199FA;
+    border-radius: 12px;
+    width: 6rem;
+    color: white;
+    font: inherit;
+    transition: 0.25s;
+}
+
+.navbar button:hover,
+.navbar button:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em #1199FA;
+    transform: translateY(-0.25em);
+}
+
+.navbar button::hover {
+    color: black;
+}
