@@ -1,3 +1,5 @@
+import './styles/Table.css';
+
 function header(content) {
   if (content === undefined || content === null) return
   return <tr>
