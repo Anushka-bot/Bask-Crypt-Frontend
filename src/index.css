@@ -1,24 +1,3 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    border: none;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-html {
-    -webkit-text-size-adjust: none; /* for iOS Safari */
-    text-size-adjust: none; /* for other mobile browsers */
-    height: 100%;
-    width: 100%;
-    background-color: #061121;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
