@@ -1,19 +1,16 @@
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between z-30">
-      <a href="/" className="text-2xl text-neutral-900">
-        baskcrypt
+    <nav className="flex items-center justify-between z-30 mt-2">
+      <a href="/" className="font-Lora underline decoration-violet text-3xl text-neutral-900">
+        Baskcrypt
       </a>
-      <div className="flex items-center">
-        <button type="button" className="w-6 h-6 mr-8">
-          <img
-            src="https://www.flaticon.com/svg/vstatic/svg/7407/7407102.svg?token=exp=1678290499~hmac=238e8eb6139f55a0095c0ea7e512b0a9"
-            alt="theme"
-          ></img>
-        </button>
+      <div className="flex flex-row gap-7 items-center ">
+        <a href="/#home" className="font-Lora text-xl text-neutral-900">Home</a>
+        <a href ="/#about" className="font-Lora text-xl text-neutral-900">About</a>
+        <a href ="/baskets" className="font-Lora text-xl text-neutral-900">Baskets</a>
         <a
           href="/signup"
-          className="font-thin px-4 py-2 text-neutral-100 rounded-md bg-gradient-to-br from-cyan-400 to-teal-600 hover:-translate-y-0.5 transition duration-300 hover:shadow-lg shadow-slate-900"
+          className="px-4 py-2 text-white rounded-md bg-gradient-to-br from-lightVio to-violet hover:-translate-y-0.5 transition duration-300 hover:shadow-lg shadow-slate-900"
         >
           Sign Up
         </a>

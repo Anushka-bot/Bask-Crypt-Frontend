@@ -4,21 +4,16 @@ import bg_image from "../resources/about.jpg";
 export default function About() {
   return (
     <>
-      <section
-        className="h-screen bg-fixed bg-cover flex"
-        style={{
-          backgroundImage: `url(${bg_image})`,
-        }}
-      >
+      <section className="bg-about1 h-screen bg-fixed bg-cover flex" id="about">
         <div className="grid grid-cols-2">
-          <div className="p-10 flex flex-col justify-center gap-6 bg-gray-300/30 backdrop-blur-md">
+          <div className="p-10 flex flex-col justify-center gap-6 bg-gray-300/50 backdrop-blur-md">
             <div className="pb-4">
-              <h1 className="text-4xl underline underline-offset-8 decoration-sky-500 text-neutral-100/80">
-                Track baskets
+              <h1 className="font-Lora text-4xl underline underline-offset-8 decoration-violet text-white">
+                About Baskcrypt
               </h1>
             </div>
             <div className="pt-4">
-              <p className="text-neutral-300">
+              <p className="font-Mont font-xl font-medium text-black">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Porta lorem mollis aliquam ut porttitor leo a diam. In fermentum
@@ -27,27 +22,22 @@ export default function About() {
                 ac. Diam donec adipiscing tristique risus nec feugiat in.
                 Faucibus scelerisque eleifend donec pretium vulputate sapien.
                 Libero id faucibus nisl egestas quis ipsum suspendisse ultrices
-                gravida dictum. Cursus eget nunc scelerisque viverra mauris.
+                gravida dictum. Cursus eget nunc scelerisque
               </p>
             </div>
           </div>
-          <img
-            src={stock_prices}
-            alt="stock_prices"
-            className="my-auto px-10"
-          />
         </div>
       </section>
-      <section className="h-screen flex">
+      <section className="bg-about2 h-screen bg-fixed bg-cover flex">
         <div className="w-1/2 ml-auto">
-          <div className="p-10 h-screen flex flex-col justify-center gap-6 bg-gray-300/30 backdrop-blur-md">
+          <div className="p-10 h-screen flex flex-col justify-center gap-6 bg-gray-300/50 backdrop-blur-md">
             <div className="pb-4">
-              <h1 className="text-4xl underline underline-offset-8 decoration-sky-500 text-neutral-800/80">
-                Track baskets
+              <h1 className="font-Lora text-4xl underline underline-offset-8 decoration-violet text-white">
+                Tracking baskets
               </h1>
             </div>
             <div className="pt-4">
-              <p className="text-neutral-800">
+              <p className="font-Mont font-medium text-black">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Porta lorem mollis aliquam ut porttitor leo a diam. In fermentum
