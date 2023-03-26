@@ -8,6 +8,8 @@ import Root from "./pages/Root";
 import SignUp from "./pages/SignUp";
 import Dashboard from "./pages/Dashboard";
 import Baskets from "./pages/Baskets";
+import User from "./pages/User";
+import Mybaskets from "./pages/Mybaskets";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
+  },
+  {
+    path: "/user",
+    element: <User />,
+  },
+  {
+    path: "/mybaskets",
+    element: <Mybaskets />,
   },
 ]);
 

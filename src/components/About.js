@@ -28,7 +28,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="bg-about2 h-screen bg-fixed bg-cover flex">
+      <section className="bg-about1 h-screen bg-fixed bg-cover flex">
         <div className="w-1/2 ml-auto">
           <div className="p-10 h-screen flex flex-col justify-center gap-6 bg-gray-300/50 backdrop-blur-md">
             <div className="pb-4">
