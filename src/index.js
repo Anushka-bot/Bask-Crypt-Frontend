@@ -10,6 +10,7 @@ import Dashboard from "./pages/Dashboard";
 import Baskets from "./pages/Baskets";
 import User from "./pages/User";
 import Mybaskets from "./pages/Mybaskets";
+import Table from "./pages/Table";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/mybaskets",
     element: <Mybaskets />,
+  },
+  {
+    path: "/table",
+    element: <Table />,
   },
 ]);
 

@@ -1,9 +1,33 @@
+import React from "react";
+
 export default function Mybaskets() {
+  const uploadedImage = React.useRef(null);
+  const imageUploader = React.useRef(null);
+
+  const handleImageUpload = e => {
+    const [file] = e.target.files;
+    if (file) {
+      const reader = new FileReader();
+      const { current } = uploadedImage;
+      current.file = file;
+      reader.onload = e => {
+        current.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+  };
     return (
       <>
         <div className="bg-[#7E94F8] w-full h-screen relative">
         <a href="/" className="absolute left-[40px] top-[30px] font-Lora underline decoration-white text-3xl text-white z-30 mt-2">Baskcrypt</a>
-            <div className="box-border absolute w-[180px] h-[170px] left-[30px] top-[90px] border-solid rounded-[23px] border-black/10 bg-white"></div>
+            
+            <div>
+              <div className="box-border absolute w-[180px] h-[170px] left-[30px] top-[90px] bg-white cursor-pointer" onClick={() => imageUploader.current.click()}>
+              <input type="file" accept="image/*" onChange={handleImageUpload} ref={imageUploader} className="hidden"/>
+              <img ref={uploadedImage} className="w-full h-full absolute"/>
+              </div>
+            </div>
+            
             <div>
                 <p className="absolute w-[168px] h-[27px] left-[40px] top-[280px] font-Mont text-[20px] leading-[27px] text-white font-semibold">Anushka Bansal</p>
                 <p className="absolute w-[149px] h-[19px] left-[40px] top-[320px] font-Mont text-[16px] leading-[19px] text-white/40 font-semibold">bansal@gmail.com</p>
@@ -19,7 +43,7 @@ export default function Mybaskets() {
               <hr className="absolute w-[1084px] left-[107px] top-[174px] border-solid rounded-sm border-black/10"></hr>
             </div>
             
-            <div className="grid grid-cols-3 gap-10">
+            {/* <div className="grid grid-cols-3 gap-10">
                 <div className="top-[207px] left-[107px] w-80 rounded-lg bg-white shadow-lg hover:-translate-y-1 duration-300 transition hover:shadow-xl ">
                     <div class="text-ellipsis p-6 h-auto">
                         <div className="mb-2">
@@ -34,7 +58,7 @@ export default function Mybaskets() {
                         </p>
                         </div>  
                     </div>
-                </div>
+                </div> */}
           </section>
         </div>
       </>

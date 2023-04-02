@@ -1,5 +1,3 @@
-import axios from 'axios'
-
 export default function Basket({ img_src }) {
 
   return (

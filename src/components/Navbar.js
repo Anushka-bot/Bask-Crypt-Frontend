@@ -7,6 +7,7 @@ export default function Navbar() {
       <div className="flex flex-row gap-7 items-center ">
         <a href="/#home" className="font-Lora text-xl text-neutral-900">Home</a>
         <a href ="/#about" className="font-Lora text-xl text-neutral-900">About</a>
+        <a href ="/table" className="font-Lora text-xl text-neutral-900">List</a>
         <a href ="/baskets" className="font-Lora text-xl text-neutral-900">Baskets</a>
         <a href ="/user" className="font-Lora text-xl text-neutral-900">Profile</a>
         <a
